@@ -11,11 +11,11 @@ RUN rm /usr/local/bin/pip && mv /usr/local/bin/pip_2 /usr/local/bin/pip
 
 RUN pip3 install \
 pipenv \
-paperspace
+gradient
 
 RUN pip2 install \
 pipenv \
-paperspace
+gradient
 
 RUN pip3 install \
 tensorflow-gpu \
