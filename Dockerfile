@@ -70,6 +70,8 @@ RUN sudo apt-get update && sudo apt-get install -y nvidia-container-toolkit
 RUN sudo systemctl restart docker 
 # Check docker NVIDIA
 RUN lspci | grep -i nvidia
+RUN --gpus all nvidia/cuda:9.0-base nvidia-smi
+
 
 
 # clean 
